@@ -58,7 +58,7 @@ contract BettingContract {
 	    }else{
 	        return false;
 	    }
-	    Bet storage bet;
+	    Bet memory bet;
 	    bet.outcome = _outcome;
 	    bet.amount = msg.value;
 	    bet.initialized = true;
